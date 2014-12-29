@@ -1,18 +1,14 @@
 {
-  "name": "generator-twentiyfifteen-child",
+  "name": "generator-twentyfifteen-child",
   "license": "MIT",
   "version": "0.1.0",
   "description": "Design your child theme in few seconds. Ready to deploy in production.",
-  "keywords": ["yeoman-generator", "wordpress", "theme", "twentiyfifteen"],
+  "keywords": ["wordpress", "theme", "twentiyfifteen"],
 
   "author": { 
     "name" : "Fabio Fabbrucci", 
     "email" : "fabio.fabbrucci@gmail.com", 
     "url" : "http://fabbrucci.me/"
-  },
-
-  "dependencies": {
-    "yeoman-generator": "^0.17.3"
   },
 
   "repository": {
