@@ -21,6 +21,17 @@ module.exports = function(grunt) {
       }
     },
 
+    jshint: {
+      options: {
+        jshintrc: '.jshintrc'
+      },
+      all: [
+        'Gruntfile.js',
+        'package.json',
+        'twentyfifteen-child/media/js/**/*.js'
+      ]
+    },
+
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
@@ -28,6 +39,11 @@ module.exports = function(grunt) {
         files: 'twentyfifteen-child/media/scss/**/*.scss',
         tasks: ['sass', 'concat']
       },
+
+      js: {
+        files: ['twentyfifteen-child/media/js/**/*.js'],
+        tasks: ['jshint']
+      }
     },
 
     concat: {
