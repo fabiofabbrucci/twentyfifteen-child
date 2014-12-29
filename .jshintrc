@@ -17,6 +17,6 @@
     "strict": true,
     "trailing": true,
     "smarttabs": true,
-    "predef": [ "Modernizr", "casper", "hljs" ],
+    "predef": [ "global" ],
     "jquery": true
 }
