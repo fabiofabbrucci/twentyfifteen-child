@@ -40,7 +40,6 @@
     "grunt-sass-globbing": "~1.0.1",
     "node-sass": "~1.2.3",
     "compass-mixins": "~0.12.3",
-    "grunt-downloadfile": "~0.3.2",
-    "grunt-sass-convert": "~0.2.0"
+    "grunt-downloadfile": "~0.3.2"
   }
 }
