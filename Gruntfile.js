@@ -5,6 +5,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-sass');
 
   grunt.initConfig({
@@ -37,7 +38,8 @@ module.exports = function(grunt) {
       sass: {
         files: 'twentyfifteen-child/media/scss/**/*.scss',
         tasks: [
-          'sass', 
+          'sass',
+          'csslint',
           'concat'
         ]
       },
@@ -48,10 +50,19 @@ module.exports = function(grunt) {
       }
     },
 
+    csslint: {
+      options: {
+        csslintrc: '.csslintrc'
+      },
+      strict: {
+        src: ['twentyfifteen-child/style.css']
+      },
+    },
+
     concat: {
       css: {
         src: [
-          'twentyfifteen-child/media/css/head.css', 
+          'twentyfifteen-child/media/css/head.css',
           'twentyfifteen-child/style.css'
         ],
         dest: 'twentyfifteen-child/style.css',

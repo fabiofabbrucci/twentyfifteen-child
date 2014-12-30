@@ -11,4 +11,4 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-fifteen-child
 */
-.addthis_toolbox a,.kudo a.kudo-object{border-bottom:0}#disqus_thread{margin:48px 8.3333%}
+.addthis_toolbox a,.kudo .kudo-object{border-bottom:0}.site-main>div{margin:48px 8.3333%;padding:5%;background-color:#ffffff;box-shadow:0 0 1px rgba(0,0,0,0.15)}
